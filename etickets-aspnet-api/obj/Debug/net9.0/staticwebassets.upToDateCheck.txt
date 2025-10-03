@@ -1,0 +1,2 @@
+C:\Users\yusif_j0ovw0c\.nuget\packages\ntoastnotify\8.0.0\contentFiles\any\net6.0\wwwroot\toastr.js
+C:\Users\yusif_j0ovw0c\.nuget\packages\ntoastnotify\8.0.0\contentFiles\any\net6.0\wwwroot\noty.js
