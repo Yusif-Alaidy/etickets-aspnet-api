@@ -24,19 +24,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Areas\Admin\Controllers\" />
-		<Folder Include="Areas\Customer\Controllers\" />
-		<Folder Include="Areas\Identity\DTOs\Response\" />
+		<Folder Include="Areas\Admin\" />
 		<Folder Include="wwwroot\assets\admin\demo\" />
 		<Folder Include="wwwroot\assets\admin\img\" />
 		<Content Include="wwwroot\**" CopyToOutputDirectory="PreserveNewest" />
-		<Compile Remove="Areas\Admin - Copy %282%29\**" />
 		<Compile Remove="Areas\Admin - Copy\**" />
-		<Content Remove="Areas\Admin - Copy %282%29\**" />
 		<Content Remove="Areas\Admin - Copy\**" />
-		<EmbeddedResource Remove="Areas\Admin - Copy %282%29\**" />
 		<EmbeddedResource Remove="Areas\Admin - Copy\**" />
-		<None Remove="Areas\Admin - Copy %282%29\**" />
 		<None Remove="Areas\Admin - Copy\**" />
 
 		<Folder Include="wwwroot\assets\admin\" />

@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|c:\\users\\yusif_j0ovw0c\\downloads\\etickets-aspnet-api\\etickets-aspnet-api\\areas\\identity\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|solutionrelative:etickets-aspnet-api\\areas\\identity\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|c:\\users\\yusif_j0ovw0c\\downloads\\etickets-aspnet-api\\etickets-aspnet-api\\areas\\identity\\dtos\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|solutionrelative:etickets-aspnet-api\\areas\\identity\\dtos\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|c:\\users\\yusif_j0ovw0c\\downloads\\etickets-aspnet-api\\etickets-aspnet-api\\areas\\identity\\dtos\\request\\newpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|solutionrelative:etickets-aspnet-api\\areas\\identity\\dtos\\request\\newpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|c:\\users\\yusif_j0ovw0c\\downloads\\etickets-aspnet-api\\etickets-aspnet-api\\areas\\identity\\dtos\\request\\forgetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|solutionrelative:etickets-aspnet-api\\areas\\identity\\dtos\\request\\forgetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|c:\\users\\yusif_j0ovw0c\\downloads\\etickets-aspnet-api\\etickets-aspnet-api\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|solutionrelative:etickets-aspnet-api\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|c:\\users\\yusif_j0ovw0c\\downloads\\etickets-aspnet-api\\etickets-aspnet-api\\etickets-aspnet-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|solutionrelative:etickets-aspnet-api\\etickets-aspnet-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|c:\\users\\yusif_j0ovw0c\\downloads\\etickets-aspnet-api\\etickets-aspnet-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|solutionrelative:etickets-aspnet-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -11,16 +35,8 @@
       "RelativeMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|solutionrelative:etickets-aspnet-api\\utility\\dbinitializer\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|c:\\users\\yusif_j0ovw0c\\downloads\\etickets-aspnet-api\\etickets-aspnet-api\\etickets-aspnet-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|solutionrelative:etickets-aspnet-api\\etickets-aspnet-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|c:\\users\\yusif_j0ovw0c\\downloads\\etickets-aspnet-api\\etickets-aspnet-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|solutionrelative:etickets-aspnet-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|c:\\users\\yusif_j0ovw0c\\downloads\\etickets-aspnet-api\\etickets-aspnet-api\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|solutionrelative:etickets-aspnet-api\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89F20017-CDFA-46A8-874B-B6E21BB20E5B}|etickets-aspnet-api\\etickets-aspnet-api.csproj|c:\\users\\yusif_j0ovw0c\\downloads\\etickets-aspnet-api\\etickets-aspnet-api\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,20 +114,71 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ForgetPasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Areas\\Identity\\DTOs\\Request\\ForgetPasswordRequest.cs",
+              "RelativeDocumentMoniker": "etickets-aspnet-api\\Areas\\Identity\\DTOs\\Request\\ForgetPasswordRequest.cs",
+              "ToolTip": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Areas\\Identity\\DTOs\\Request\\ForgetPasswordRequest.cs",
+              "RelativeToolTip": "etickets-aspnet-api\\Areas\\Identity\\DTOs\\Request\\ForgetPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T23:39:25.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewPasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Areas\\Identity\\DTOs\\Request\\NewPasswordRequest.cs",
+              "RelativeDocumentMoniker": "etickets-aspnet-api\\Areas\\Identity\\DTOs\\Request\\NewPasswordRequest.cs",
+              "ToolTip": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Areas\\Identity\\DTOs\\Request\\NewPasswordRequest.cs",
+              "RelativeToolTip": "etickets-aspnet-api\\Areas\\Identity\\DTOs\\Request\\NewPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T12:51:24.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Areas\\Identity\\DTOs\\Request\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "etickets-aspnet-api\\Areas\\Identity\\DTOs\\Request\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Areas\\Identity\\DTOs\\Request\\LoginRequest.cs",
+              "RelativeToolTip": "etickets-aspnet-api\\Areas\\Identity\\DTOs\\Request\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T12:30:05.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Areas\\Identity\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "etickets-aspnet-api\\Areas\\Identity\\Controllers\\AccountsController.cs",
+              "ToolTip": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Areas\\Identity\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "etickets-aspnet-api\\Areas\\Identity\\Controllers\\AccountsController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwJYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T11:42:42.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\appsettings.json",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\appsettings.json",
               "ToolTip": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\appsettings.json",
               "RelativeToolTip": "etickets-aspnet-api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-03T06:45:18.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:45:18.269Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "EmailSender.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Utility\\EmailSender.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Utility\\EmailSender.cs",
@@ -119,12 +186,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Utility\\EmailSender.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:20:31.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:20:31.96Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "SD.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Utility\\SD.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Utility\\SD.cs",
@@ -132,12 +198,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Utility\\SD.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:19:51.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:19:51.595Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "IDBInitializer.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Utility\\DBInitializer\\IDBInitializer.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Utility\\DBInitializer\\IDBInitializer.cs",
@@ -145,12 +210,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Utility\\DBInitializer\\IDBInitializer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:19:30.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:19:30.89Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "DBInitializer.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Utility\\DBInitializer\\DBInitializer.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Utility\\DBInitializer\\DBInitializer.cs",
@@ -158,12 +222,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Utility\\DBInitializer\\DBInitializer.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:19:08.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:19:08.619Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Actor.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Models\\Actor.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Models\\Actor.cs",
@@ -171,25 +234,23 @@
               "RelativeToolTip": "etickets-aspnet-api\\Models\\Actor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:11:45.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:11:45.657Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "etickets-aspnet-api",
+              "DocumentIndex": 5,
+              "Title": "etickets-aspnet-api.csproj",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\etickets-aspnet-api.csproj",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\etickets-aspnet-api.csproj",
               "ToolTip": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\etickets-aspnet-api.csproj",
               "RelativeToolTip": "etickets-aspnet-api\\etickets-aspnet-api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAcwB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-03T05:57:22.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T05:57:22.523Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Program.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Program.cs",
@@ -197,12 +258,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Program.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAiwAoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T05:58:08.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T05:58:08.45Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Repositories\\Repository.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Repositories\\Repository.cs",
@@ -210,12 +270,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Repositories\\Repository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:25:07.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:25:07.737Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Repositories\\IRepositories\\IRepository.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Repositories\\IRepositories\\IRepository.cs",
@@ -223,12 +282,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Repositories\\IRepositories\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:25:30.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:25:30.096Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "CineBookContext.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\DataAccess\\CineBookContext.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\DataAccess\\CineBookContext.cs",
@@ -236,8 +294,7 @@
               "RelativeToolTip": "etickets-aspnet-api\\DataAccess\\CineBookContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:11:02.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:11:02.007Z"
             },
             {
               "$type": "Document",
@@ -247,14 +304,13 @@
               "RelativeDocumentMoniker": "etickets-aspnet-api\\GlobalUsings.cs",
               "ToolTip": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\GlobalUsings.cs",
               "RelativeToolTip": "etickets-aspnet-api\\GlobalUsings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:06:30.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:06:30.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Models\\ApplicationUser.cs",
@@ -262,12 +318,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Models\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:12:25.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:12:25.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Cart.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Models\\Cart.cs",
@@ -275,12 +330,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Models\\Cart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:12:55.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:12:55.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Models\\Category.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Models\\Category.cs",
@@ -288,12 +342,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:13:56.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:13:56.514Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Cinema.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Models\\Cinema.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Models\\Cinema.cs",
@@ -301,12 +354,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Models\\Cinema.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:13:53.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:13:53.124Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Movie.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Models\\Movie.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Models\\Movie.cs",
@@ -314,12 +366,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Models\\Movie.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:13:43.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:13:43.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Models\\Order.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Models\\Order.cs",
@@ -327,12 +378,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Models\\Order.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:13:37.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:13:37.085Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "OrderItems.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Models\\OrderItems.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Models\\OrderItems.cs",
@@ -340,12 +390,11 @@
               "RelativeToolTip": "etickets-aspnet-api\\Models\\OrderItems.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:13:32.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:13:32.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "UserOTP.cs",
               "DocumentMoniker": "C:\\Users\\yusif_j0ovw0c\\Downloads\\etickets-aspnet-api\\etickets-aspnet-api\\Models\\UserOTP.cs",
               "RelativeDocumentMoniker": "etickets-aspnet-api\\Models\\UserOTP.cs",
@@ -353,8 +402,7 @@
               "RelativeToolTip": "etickets-aspnet-api\\Models\\UserOTP.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:12:01.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:12:01.797Z"
             }
           ]
         }

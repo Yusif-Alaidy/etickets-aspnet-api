@@ -1,1 +1,113 @@
-[]
+[
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Identity.Controllers.AccountsController",
+    "Method": "ConfirmEmail",
+    "RelativePath": "api/Identity/Accounts/ConfirmEmail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Identity.Controllers.AccountsController",
+    "Method": "ForgetPassword",
+    "RelativePath": "api/Identity/Accounts/forgetpassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "etickets_aspnet_api.Areas.Identity.DTOs.Request.ForgetPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Identity.Controllers.AccountsController",
+    "Method": "Login",
+    "RelativePath": "api/Identity/Accounts/Login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "etickets_aspnet_api.Areas.Identity.DTOs.Request.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Identity.Controllers.AccountsController",
+    "Method": "Logout",
+    "RelativePath": "api/Identity/Accounts/Logout",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Identity.Controllers.AccountsController",
+    "Method": "NewPassword",
+    "RelativePath": "api/Identity/Accounts/newpassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "etickets_aspnet_api.Areas.Identity.DTOs.Request.NewPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Identity.Controllers.AccountsController",
+    "Method": "Register",
+    "RelativePath": "api/Identity/Accounts/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "etickets_aspnet_api.Areas.Identity.DTOs.Request.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Identity.Controllers.AccountsController",
+    "Method": "ResendEmailConfirmation",
+    "RelativePath": "api/Identity/Accounts/ResendEmailConfirmation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
