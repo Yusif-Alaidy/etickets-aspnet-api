@@ -1,5 +1,58 @@
 [
   {
+    "ContainingType": "etickets_aspnet_api.Areas.Customer.Controllers.ValuesController",
+    "Method": "Index",
+    "RelativePath": "api/customer/Values",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "etickets_aspnet_api.Areas.Customer.DTOs.Request.FilterRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Customer.Controllers.ValuesController",
+    "Method": "Actor",
+    "RelativePath": "api/customer/Values/actore/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Customer.Controllers.ValuesController",
+    "Method": "Movie",
+    "RelativePath": "api/customer/Values/movie/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "etickets_aspnet_api.Areas.Identity.Controllers.AccountsController",
     "Method": "ConfirmEmail",
     "RelativePath": "api/Identity/Accounts/ConfirmEmail",
@@ -104,8 +157,50 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "System.String",
-        "IsRequired": false
+        "Type": "etickets_aspnet_api.Areas.Identity.DTOs.Request.ForgetPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Identity.Controllers.ProfilesController",
+    "Method": "Index",
+    "RelativePath": "api/identity/Profiles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Identity.Controllers.ProfilesController",
+    "Method": "UpdateInfo",
+    "RelativePath": "api/identity/Profiles",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "etickets_aspnet_api.Areas.Identity.DTOs.Request.UpdateInformationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Identity.Controllers.ProfilesController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/identity/Profiles",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "etickets_aspnet_api.Areas.Identity.DTOs.Request.ChangePasswordRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

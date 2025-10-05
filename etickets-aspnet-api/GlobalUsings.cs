@@ -18,5 +18,8 @@ global using System.Net.Mail;
 //global using etickets_aspnet_api.Areas.Admin.ModelView;
 global using Microsoft.AspNetCore.Authorization;
 global using etickets_aspnet_api.Utility.DBInitializer;
+
 global using etickets_aspnet_api.Areas.Identity.DTOs.Request;
-global using etickets_aspnet_api.Areas.Identity.DTOs;
+global using etickets_aspnet_api.Areas.Identity.DTOs.Response;
+
+global using etickets_aspnet_api.Areas.Customer.DTOs.Request;
