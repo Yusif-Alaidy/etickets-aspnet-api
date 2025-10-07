@@ -32,7 +32,7 @@ namespace etickets_aspnet_api.Utility.DBInitializer
             // -------------------------------------------------------
             
             // Seed data for role --------------------------------------------------------
-            if (Context.Roles.IsNullOrEmpty())
+            if (Context.Roles is null)
             {
                 Role.CreateAsync(new(SD.SuperAdminRole)).GetAwaiter().GetResult();
                 Role.CreateAsync(new(SD.AdminRole)).GetAwaiter().GetResult();

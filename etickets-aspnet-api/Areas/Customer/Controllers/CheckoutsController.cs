@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Stripe.Checkout;
+using etickets_aspnet_api.Areas.Customer.DTOs.Request;
+using etickets_aspnet_api.Areas.Customer.DTOs.Response;
 
 namespace etickets_aspnet_api.Areas.Customer.Controllers
 {
@@ -23,7 +25,7 @@ namespace etickets_aspnet_api.Areas.Customer.Controllers
 
         #region Constrocture
 
-        public CheckoutsController(UserManager<ApplicationUser> userManger, ILogger<CheckoutController> logger, IRepository<Cart> repositoryCart, IRepository<Order> repositoryOrder, IRepository<OrderItems> repositoryOrderItem, IEmailSender emailSender, CineBookContext _context)
+        public CheckoutsController(UserManager<ApplicationUser> userManger, ILogger<CheckoutsController> logger, IRepository<Cart> repositoryCart, IRepository<Order> repositoryOrder, IRepository<OrderItems> repositoryOrderItem, IEmailSender emailSender, CineBookContext _context)
         {
             this.userManger = userManger;
             this._logger = logger;

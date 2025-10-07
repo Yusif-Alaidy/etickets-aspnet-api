@@ -1,12 +1,15 @@
 ﻿using etickets_aspnet_api.Areas.Customer.DTOs.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using etickets_aspnet_api.Areas.Customer.DTOs.Request;
+using etickets_aspnet_api.Areas.Customer.DTOs.Response;
 
 namespace etickets_aspnet_api.Areas.Customer.Controllers
 {
     [Area(SD.CustomerRole)]
     [Route("api/customer/[controller]")]
     [ApiController]
+    [Authorize]
     public class ValuesController : ControllerBase
     {
         #region Fields
@@ -171,7 +174,7 @@ namespace etickets_aspnet_api.Areas.Customer.Controllers
 
             var movieDTO = new MoviesResponse
             {
-                Id = movie.id,
+                Id = movie.Id,
                 Name = movie.Name,
                 Description = movie.Description,
                 Price = movie.Price,

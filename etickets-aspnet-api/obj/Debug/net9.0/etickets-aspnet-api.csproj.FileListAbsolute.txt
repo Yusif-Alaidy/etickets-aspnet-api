@@ -587,3 +587,4 @@ C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Deb
 C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Debug\net9.0\etickets-aspnet-api.pdb
 C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Debug\net9.0\etickets-aspnet-api.genruntimeconfig.cache
 C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Debug\net9.0\ref\etickets-aspnet-api.dll
+C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

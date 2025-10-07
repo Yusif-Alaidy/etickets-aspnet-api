@@ -3,6 +3,8 @@ using etickets_aspnet_api.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Stripe.Checkout;
+using etickets_aspnet_api.Areas.Customer.DTOs.Request;
+using etickets_aspnet_api.Areas.Customer.DTOs.Response;
 
 namespace etickets_aspnet_api.Areas.Customer.Controllers
 {
@@ -53,7 +55,7 @@ namespace etickets_aspnet_api.Areas.Customer.Controllers
                 totalAmount,
                 cartDTO,
             });
-            return View(carts);
+            
         }
         #endregion
 

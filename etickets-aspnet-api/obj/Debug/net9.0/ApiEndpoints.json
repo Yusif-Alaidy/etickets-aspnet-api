@@ -1,5 +1,821 @@
 [
   {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.ActorsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Admin/Actors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.ActorsController",
+    "Method": "Create",
+    "RelativePath": "api/Admin/Actors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Bio",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProfilePicture",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "News",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Movies",
+        "Type": "System.Collections.Generic.List\u00601[[etickets_aspnet_api.Areas.Admin.DTOs.Response.MoviesResponse, etickets-aspnet-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "profilePicture",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.ActorsController",
+    "Method": "GetById",
+    "RelativePath": "api/Admin/Actors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "etickets_aspnet_api.Areas.Admin.DTOs.Request.ActorIdRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.ActorsController",
+    "Method": "Delete",
+    "RelativePath": "api/Admin/Actors/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "etickets_aspnet_api.Areas.Admin.DTOs.Request.ActorIdRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.CategoriesController",
+    "Method": "GetAll",
+    "RelativePath": "api/admin/Categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.CategoriesController",
+    "Method": "Create",
+    "RelativePath": "api/admin/Categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "category",
+        "Type": "etickets_aspnet_api.Areas.Admin.DTOs.Request.CategoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.CategoriesController",
+    "Method": "GetById",
+    "RelativePath": "api/admin/Categories/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "etickets_aspnet_api.Areas.Admin.DTOs.Request.CategoryIdRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.CategoriesController",
+    "Method": "Update",
+    "RelativePath": "api/admin/Categories/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "category",
+        "Type": "etickets_aspnet_api.Models.Category",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.CategoriesController",
+    "Method": "Delete",
+    "RelativePath": "api/admin/Categories/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.CinemasController",
+    "Method": "GetAll",
+    "RelativePath": "api/admin/Cinemas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.CinemasController",
+    "Method": "Create",
+    "RelativePath": "api/admin/Cinemas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CinemaLogo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Movies",
+        "Type": "System.Collections.Generic.List\u00601[[etickets_aspnet_api.Models.Movie, etickets-aspnet-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "cinemaLogo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.CinemasController",
+    "Method": "GetById",
+    "RelativePath": "api/admin/Cinemas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.CinemasController",
+    "Method": "Update",
+    "RelativePath": "api/admin/Cinemas/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CinemaLogo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Movies",
+        "Type": "System.Collections.Generic.List\u00601[[etickets_aspnet_api.Models.Movie, etickets-aspnet-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "cinemaLogo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.CinemasController",
+    "Method": "Delete",
+    "RelativePath": "api/admin/Cinemas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.MoviesController",
+    "Method": "GetAll",
+    "RelativePath": "api/admin/Movies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.MoviesController",
+    "Method": "Create",
+    "RelativePath": "api/admin/Movies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImgUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Quantity",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TrailerUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "MovieStatus",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CinemaId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cinema.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cinema.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cinema.Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cinema.CinemaLogo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cinema.Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cinema.Movies",
+        "Type": "System.Collections.Generic.List\u00601[[etickets_aspnet_api.Models.Movie, etickets-aspnet-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Category.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Category.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Category.Movies",
+        "Type": "System.Collections.Generic.List\u00601[[etickets_aspnet_api.Models.Movie, etickets-aspnet-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Actors",
+        "Type": "System.Collections.Generic.List\u00601[[etickets_aspnet_api.Models.Actor, etickets-aspnet-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ActorIds",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.MoviesController",
+    "Method": "GetById",
+    "RelativePath": "api/admin/Movies/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.MoviesController",
+    "Method": "Update",
+    "RelativePath": "api/admin/Movies/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImgUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Quantity",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TrailerUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "MovieStatus",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CinemaId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cinema.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cinema.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cinema.Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cinema.CinemaLogo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cinema.Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cinema.Movies",
+        "Type": "System.Collections.Generic.List\u00601[[etickets_aspnet_api.Models.Movie, etickets-aspnet-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Category.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Category.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Category.Movies",
+        "Type": "System.Collections.Generic.List\u00601[[etickets_aspnet_api.Models.Movie, etickets-aspnet-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Actors",
+        "Type": "System.Collections.Generic.List\u00601[[etickets_aspnet_api.Models.Actor, etickets-aspnet-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ActorIds",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.MoviesController",
+    "Method": "Delete",
+    "RelativePath": "api/admin/Movies/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.UsersController",
+    "Method": "GetAll",
+    "RelativePath": "api/admin/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Customer.Controllers.CartsController",
+    "Method": "Index",
+    "RelativePath": "api/customer/Carts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Customer.Controllers.CartsController",
+    "Method": "AddToCart",
+    "RelativePath": "api/customer/Carts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "etickets_aspnet_api.Areas.Customer.DTOs.Request.AddToCartRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Customer.Controllers.CartsController",
+    "Method": "DeleteProductFromCart",
+    "RelativePath": "api/customer/Carts",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MovieId",
+        "Type": "etickets_aspnet_api.Areas.Customer.DTOs.Request.MovieIdRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Customer.Controllers.CartsController",
+    "Method": "DecrementCount",
+    "RelativePath": "api/customer/Carts/DecrementCount",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MovieId",
+        "Type": "etickets_aspnet_api.Areas.Customer.DTOs.Request.MovieIdRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Customer.Controllers.CartsController",
+    "Method": "IncrementCount",
+    "RelativePath": "api/customer/Carts/IncrementCount",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MovieId",
+        "Type": "etickets_aspnet_api.Areas.Customer.DTOs.Request.MovieIdRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Customer.Controllers.CartsController",
+    "Method": "Pay",
+    "RelativePath": "api/customer/Carts/pay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Customer.Controllers.CheckoutsController",
+    "Method": "Cancel",
+    "RelativePath": "api/customer/Checkouts/cancel/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "etickets_aspnet_api.Areas.Customer.DTOs.Request.OrderIdRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "orderId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Customer.Controllers.CheckoutsController",
+    "Method": "Success",
+    "RelativePath": "api/customer/Checkouts/Success/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "etickets_aspnet_api.Areas.Customer.DTOs.Request.OrderIdRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "orderId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "etickets_aspnet_api.Areas.Customer.Controllers.ValuesController",
     "Method": "Index",
     "RelativePath": "api/customer/Values",

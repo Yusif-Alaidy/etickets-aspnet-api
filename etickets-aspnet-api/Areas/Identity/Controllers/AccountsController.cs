@@ -1,7 +1,11 @@
 ﻿using etickets_aspnet_api.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace etickets_aspnet_api.Areas.Identity.Controllers
 {
@@ -131,8 +135,33 @@ namespace etickets_aspnet_api.Areas.Identity.Controllers
                 return BadRequest(new { msg = $"You have a block till {user.LockoutEnd}" });
             }
 
-            await signInManager.SignInAsync(user, request.RememberMe);
-            return Ok(new { msg = "Login successfully" });
+            //await signInManager.SignInAsync(user, request.RememberMe);
+
+            var userRoles = await _userManager.GetRolesAsync(user);
+
+            var claims = new List<Claim> {
+                        new Claim(ClaimTypes.NameIdentifier, user.Id),
+                        new Claim(ClaimTypes.Email, user.Email),
+                        new Claim(ClaimTypes.Name, user.UserName),
+                        new Claim(ClaimTypes.Role, String.Join(",", userRoles)),
+                    };
+
+            var signingCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes("EraaSoft515##EraaSoft515##EraaSoft515##EraaSoft515##")), SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                        issuer: "https://localhost:7177",
+                        audience: "https://localhost:5000,https://localhost:5500,https://localhost:4200",
+                        claims: claims,
+                        expires: DateTime.UtcNow.AddDays(1),
+                        signingCredentials: signingCredentials
+                    );
+
+            return Ok(new
+            {
+                token = new JwtSecurityTokenHandler().WriteToken(token),
+                expires = token.ValidTo
+            });
+            //return Ok(new { msg = "Login successfully" });
         }
         #endregion 
 
