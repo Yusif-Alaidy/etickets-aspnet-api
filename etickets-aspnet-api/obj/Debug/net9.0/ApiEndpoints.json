@@ -43,11 +43,6 @@
         "IsRequired": false
       },
       {
-        "Name": "Movies",
-        "Type": "System.Collections.Generic.List\u00601[[etickets_aspnet_api.Areas.Admin.DTOs.Response.MoviesResponse, etickets-aspnet-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "IsRequired": false
-      },
-      {
         "Name": "profilePicture",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
@@ -64,13 +59,29 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "etickets_aspnet_api.Areas.Admin.DTOs.Request.ActorIdRequest",
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "etickets_aspnet_api.Areas.Admin.Controllers.ActorsController",
+    "Method": "Update",
+    "RelativePath": "api/Admin/Actors/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "id",
-        "Type": "",
+        "Name": "actor",
+        "Type": "etickets_aspnet_api.Models.Actor",
         "IsRequired": true
       }
     ],
@@ -132,13 +143,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "etickets_aspnet_api.Areas.Admin.DTOs.Request.CategoryIdRequest",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "",
+        "Name": "Id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -159,7 +165,7 @@
       },
       {
         "Name": "category",
-        "Type": "etickets_aspnet_api.Models.Category",
+        "Type": "etickets_aspnet_api.Areas.Admin.DTOs.Request.CategoryRequest",
         "IsRequired": true
       }
     ],
@@ -394,58 +400,13 @@
         "IsRequired": false
       },
       {
-        "Name": "Cinema.Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Cinema.Name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Cinema.Description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Cinema.CinemaLogo",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Cinema.Address",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Cinema.Movies",
-        "Type": "System.Collections.Generic.List\u00601[[etickets_aspnet_api.Models.Movie, etickets-aspnet-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "IsRequired": false
-      },
-      {
         "Name": "CategoryId",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
-        "Name": "Category.Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Category.Name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Category.Movies",
-        "Type": "System.Collections.Generic.List\u00601[[etickets_aspnet_api.Models.Movie, etickets-aspnet-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Actors",
-        "Type": "System.Collections.Generic.List\u00601[[etickets_aspnet_api.Models.Actor, etickets-aspnet-api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Name": "ActorsIds",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
@@ -956,9 +917,24 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "etickets_aspnet_api.Areas.Identity.DTOs.Request.RegisterRequest",
-        "IsRequired": true
+        "Name": "Username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ConfirmPassword",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

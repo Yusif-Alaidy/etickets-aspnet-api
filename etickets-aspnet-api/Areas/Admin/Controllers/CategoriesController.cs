@@ -29,7 +29,7 @@ namespace etickets_aspnet_api.Areas.Admin.Controllers
             if (categories == null || !categories.Any())
                 return NotFound(new { message = "No categories found." });
 
-            var categoryDTO = categories.Adapt<CategoryResponse>();
+            var categoryDTO = categories.Adapt<List<CategoryResponse>>();
             return Ok(categoryDTO);
         }
         #endregion
@@ -37,11 +37,11 @@ namespace etickets_aspnet_api.Areas.Admin.Controllers
         #region Get One Category
         // GET: api/admin/categories/{id}
         [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetById(CategoryIdRequest request)
+        public async Task<IActionResult> GetById([FromRoute]CategoryIdRequest request)
         {
             var category = await _repository.GetOneAsync(e => e.Id == request.Id);
             if (category == null)
-                return NotFound(new { message = $"Category with id {request} not found." });
+                return NotFound(new { message = $"Category with id {request.Id} not found." });
 
             var categoryDTO = category.Adapt<CategoryResponse>();
             return Ok(categoryDTO);
@@ -67,29 +67,24 @@ namespace etickets_aspnet_api.Areas.Admin.Controllers
         #region Update
         // PUT: api/admin/categories/{id}
         [HttpPut("{id:int}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Category category)
+        public async Task<IActionResult> Update([FromRoute]int id, [FromBody] CategoryRequest category)
         {
-            if (id != category.Id)
-                return BadRequest(new { message = "Category ID mismatch." });
-
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
+            
             var existingCategory = await _repository.GetOneAsync(e => e.Id == id);
             if (existingCategory == null)
                 return NotFound(new { message = $"Category with id {id} not found." });
-
-            await _repository.Update(category);
+            existingCategory.Name = category.Name;
+            await _repository.Update(existingCategory);
             await _repository.CommitAsync();
 
-            return Ok(new { message = "Category updated successfully.", category });
+            return Ok(new { message = "Category updated successfully.", updatedCategory = existingCategory.Adapt<CategoryResponse>() });
         }
         #endregion
 
         #region Delete
         // DELETE: api/category/{id}
         [HttpDelete("{id:int}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete([FromRoute] int id)
         {
             var category = await _repository.GetOneAsync(e => e.Id == id);
             if (category == null)

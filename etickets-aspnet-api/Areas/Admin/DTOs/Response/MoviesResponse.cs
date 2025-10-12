@@ -28,5 +28,7 @@
         public string? CinemaName { get; set; }
 
         public string? CategoryName { get; set; }
+        public List<int>? ActorsIds { get; set; } = new List<int>();
+
     }
 }

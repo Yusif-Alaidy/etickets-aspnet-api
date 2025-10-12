@@ -42,22 +42,6 @@ namespace etickets_aspnet_api.Areas.Admin.Controllers
                 ProfilePicture = e.ProfilePicture,
                 Bio = e.Bio,
                 News = e.News,
-                Movies = e.Movies.Select(e => new MoviesResponse
-                {
-                    Id = e.Id,
-                    Name = e.Name,
-                    Description = e.Description,
-                    Price = e.Price,
-                    ImgUrl = e.ImgUrl,
-                    Quantity = e.Quantity,
-                    TrailerUrl = e.TrailerUrl,
-                    EndDate = e.EndDate,
-                    StartDate = e.StartDate,
-                    MovieStatus = e.MovieStatus,
-                    CategoryName = e.Category.Name,
-                    CinemaName = e.Cinema.Name,
-                }).ToList(),
-
             });
             return Ok(actorsDTO);
         }
@@ -65,7 +49,7 @@ namespace etickets_aspnet_api.Areas.Admin.Controllers
 
         #region Get By Id
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(ActorIdRequest request)
+        public async Task<IActionResult> GetById([FromRoute]ActorIdRequest request)
         {
             var actor = await _repository.GetOneAsync(c => c.Id == request.Id);
             if (actor is null)
@@ -79,22 +63,6 @@ namespace etickets_aspnet_api.Areas.Admin.Controllers
                 ProfilePicture = actor.ProfilePicture,
                 Bio = actor.Bio,
                 News = actor.News,
-                Movies = actor.Movies.Select(e => new MoviesResponse
-                {
-                    Id = e.Id,
-                    Name = e.Name,
-                    Description = e.Description,
-                    Price = e.Price,
-                    ImgUrl = e.ImgUrl,
-                    Quantity = e.Quantity,
-                    TrailerUrl = e.TrailerUrl,
-                    EndDate = e.EndDate,
-                    StartDate = e.StartDate,
-                    MovieStatus = e.MovieStatus,
-                    CategoryName = e.Category.Name,
-                    CinemaName = e.Cinema.Name,
-                }).ToList(),
-
             };
 
             return Ok(actorsDTO);
@@ -111,7 +79,17 @@ namespace etickets_aspnet_api.Areas.Admin.Controllers
 
             // Save file
             var fileName = Guid.NewGuid().ToString() + Path.GetExtension(profilePicture.FileName);
-            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img", fileName);
+
+            // Define folder path
+            var uploadDir = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img");
+
+            // ✅ Ensure folder exists
+            if (!Directory.Exists(uploadDir))
+                Directory.CreateDirectory(uploadDir);
+
+
+            var filePath = Path.Combine(uploadDir, fileName);
+            //var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img", fileName);
 
             using (var stream = System.IO.File.Create(filePath))
             {
@@ -136,36 +114,43 @@ namespace etickets_aspnet_api.Areas.Admin.Controllers
         }
         #endregion
 
-        //#region Update
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> Update(ActorIdRequest request, [FromBody] Actor actor)
-        //{
-        //    if (request.Id != actor.Id)
-        //        return BadRequest(new { message = "ID mismatch" });
+        #region Update
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Update([FromRoute]ActorIdRequest request, [FromBody] Actor actor)
+        {
+            if (request.Id != actor.Id)
+                return BadRequest(new { message = "ID mismatch" });
 
-        //    var existingActor = await _repository.GetOneAsync(c => c.Id == request.Id);
-        //    if (existingActor is null)
-        //        return NotFound(new { message = $"Actor with id {request} not found" });
+            var existingActor = await _repository.GetOneAsync(c => c.Id == request.Id);
+            if (existingActor is null)
+                return NotFound(new { message = $"Actor with id {request} not found" });
 
-        //    await _repository.Update(actor);
-        //    await _repository.CommitAsync();
+            existingActor.FirstName = actor.FirstName;
+            existingActor.LastName = actor.LastName;
+            existingActor.Bio = actor.Bio;
+            existingActor.News = actor.News;
+            existingActor.ProfilePicture = actor.ProfilePicture;
 
-        //    var actorDTO = new Actor
-        //    {
-        //        FirstName = existingActor.FirstName,
-        //        LastName = existingActor.LastName,
-        //        ProfilePicture = existingActor.ProfilePicture,
-        //        Bio = existingActor.Bio,
-        //        News = existingActor.News,
+            await _repository.Update(existingActor);
+            await _repository.CommitAsync();
 
-        //    };
+            var actorDTO = new ActorsResponse
+            {
+                Id = existingActor.Id,
+                FirstName = existingActor.FirstName,
+                LastName = existingActor.LastName,
+                ProfilePicture = existingActor.ProfilePicture,
+                Bio = existingActor.Bio,
+                News = existingActor.News,
 
-        //    return Ok(new { message = "Actor updated successfully", actorDTO });
-        //}
-        //#endregion
+            };
+
+            return Ok(new { message = "Actor updated successfully", actorUpdated = actorDTO });
+        }
+        #endregion
 
         #region Delete
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(ActorIdRequest request)
         {
             var actor = await _repository.GetOneAsync(e => e.Id == request.Id);

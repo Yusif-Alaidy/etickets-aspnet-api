@@ -49,15 +49,18 @@ namespace etickets_aspnet_api.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] Cinema cinema, IFormFile cinemaLogo)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             if (cinemaLogo is null)
                 return BadRequest(new { message = "Cinema logo is required." });
 
             // Save logo to wwwroot/images
             var fileName = Guid.NewGuid().ToString() + Path.GetExtension(cinemaLogo.FileName);
-            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", fileName);
+            // Define folder path
+            var uploadDir = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img");
+            // ✅ Ensure folder exists
+            if (!Directory.Exists(uploadDir))
+                Directory.CreateDirectory(uploadDir);
+
+            var filePath = Path.Combine(uploadDir, fileName);
 
             using (var stream = System.IO.File.Create(filePath))
             {
@@ -82,44 +85,54 @@ namespace etickets_aspnet_api.Areas.Admin.Controllers
         [HttpPut("{id:int}")]
         public async Task<IActionResult> Update(int id, [FromForm] Cinema cinema, IFormFile? cinemaLogo)
         {
-            if (id != cinema.Id)
-                return BadRequest(new { message = "Cinema ID mismatch." });
-
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
+            
             var cinemaInDb = await _repository.GetOneAsync(e => e.Id == id);
             if (cinemaInDb is null)
                 return NotFound(new { message = $"Cinema with ID {id} not found." });
 
-            // Handle new logo upload
+            // ✅ Update cinema info
+            cinemaInDb.Name = cinema.Name;
+            cinemaInDb.Description = cinema.Description;
+            cinemaInDb.Address = cinema.Address;
+
+            // ✅ Handle new logo upload if provided
             if (cinemaLogo is not null)
             {
                 var fileName = Guid.NewGuid().ToString() + Path.GetExtension(cinemaLogo.FileName);
-                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", fileName);
+
+                var uploadDir = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img");
+                if (!Directory.Exists(uploadDir))
+                    Directory.CreateDirectory(uploadDir);
+
+                var filePath = Path.Combine(uploadDir, fileName);
 
                 using (var stream = System.IO.File.Create(filePath))
                 {
                     await cinemaLogo.CopyToAsync(stream);
                 }
 
-                // Delete old file if exists
-                var oldFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", cinemaInDb.CinemaLogo ?? "");
-                if (System.IO.File.Exists(oldFilePath))
-                    System.IO.File.Delete(oldFilePath);
+                // Delete old logo if it exists
+                if (!string.IsNullOrEmpty(cinemaInDb.CinemaLogo))
+                {
+                    var oldFilePath = Path.Combine(uploadDir, cinemaInDb.CinemaLogo);
+                    if (System.IO.File.Exists(oldFilePath))
+                        System.IO.File.Delete(oldFilePath);
+                }
 
-                cinema.CinemaLogo = fileName;
-            }
-            else
-            {
-                cinema.CinemaLogo = cinemaInDb.CinemaLogo;
+                cinemaInDb.CinemaLogo = fileName;
             }
 
-            await _repository.Update(cinema);
+            await _repository.Update(cinemaInDb);
             await _repository.CommitAsync();
 
-            return Ok(new { message = "Cinema updated successfully.", data = cinema });
+            return Ok(new
+            {
+                message = "Cinema updated successfully.",
+                data = cinemaInDb
+            });
         }
+
+
         #endregion
 
         #region Delete
@@ -132,7 +145,7 @@ namespace etickets_aspnet_api.Areas.Admin.Controllers
                 return NotFound(new { message = $"Cinema with ID {id} not found." });
 
             // Delete logo file
-            var oldFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", cinema.CinemaLogo ?? "");
+            var oldFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img", cinema.CinemaLogo ?? "");
             if (System.IO.File.Exists(oldFilePath))
                 System.IO.File.Delete(oldFilePath);
 

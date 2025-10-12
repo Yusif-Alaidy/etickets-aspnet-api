@@ -1,6 +1,7 @@
 ﻿using etickets_aspnet_api.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 using System.IdentityModel.Tokens.Jwt;
@@ -9,9 +10,9 @@ using System.Text;
 
 namespace etickets_aspnet_api.Areas.Identity.Controllers
 {
+    [ApiController]
     [Area("Identity")]
     [Route("api/Identity/[controller]")]
-    [ApiController]
     public class AccountsController : ControllerBase
     {
         #region Fields 
@@ -37,8 +38,9 @@ namespace etickets_aspnet_api.Areas.Identity.Controllers
 
         #region Register
         [HttpPost("Register")]
-        public async Task<IActionResult> Register(RegisterRequest request)
+        public async Task<IActionResult> Register([FromForm]RegisterRequest request)
         {
+
             // Create application user from request
             ApplicationUser applicationUser = new()
             {
@@ -57,9 +59,9 @@ namespace etickets_aspnet_api.Areas.Identity.Controllers
 
             // Generate email confirmation token
             var token = await _userManager.GenerateEmailConfirmationTokenAsync(applicationUser);
-            token = WebUtility.UrlEncode(token);
+            var encodedToken = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
 
-            var link = $"{Request.Scheme}://{Request.Host}/api/Identity/Accounts/ConfirmEmail?userId={applicationUser.Id}&token={token}";
+            var link = $"{Request.Scheme}://{Request.Host}/api/Identity/Accounts/ConfirmEmail?userId={applicationUser.Id}&token={encodedToken}";
 
             // Send confirmation email
             await emailSender.SendEmailAsync(
@@ -84,8 +86,9 @@ namespace etickets_aspnet_api.Areas.Identity.Controllers
         {
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null) return NotFound();
+            var decodedToken = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(token));
 
-            var result = await _userManager.ConfirmEmailAsync(user, WebUtility.UrlDecode(token));
+            var result = await _userManager.ConfirmEmailAsync(user, decodedToken);
 
             if (!result.Succeeded)
             {
@@ -194,8 +197,9 @@ namespace etickets_aspnet_api.Areas.Identity.Controllers
 
             // Send Email confirmation
             var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            var encodedToken = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
 
-            var link = $"{Request.Scheme}://{Request.Host}/api/Identity/Accounts/ConfirmEmail?userId={user.Id}&token={token}";
+            var link = $"{Request.Scheme}://{Request.Host}/api/Identity/Accounts/ConfirmEmail?userId={user.Id}&token={encodedToken}";
 
             await emailSender.SendEmailAsync(user.Email!, "Confirm Your Account!", $"<h1>Confirm Your Account By Clicking <a href='{link}'>here</a></h1>");
 
@@ -208,7 +212,6 @@ namespace etickets_aspnet_api.Areas.Identity.Controllers
         #endregion
 
         #region Forget Password
-
 
         [HttpPost("forgetpassword")]
         public async Task<IActionResult> ForgetPassword([FromBody] ForgetPasswordRequest request)
@@ -233,19 +236,23 @@ namespace etickets_aspnet_api.Areas.Identity.Controllers
                 ValidTo = DateTime.UtcNow.AddDays(1)
             });
             await _userOTP.CommitAsync();
+            var link = $"{Request.Scheme}://{Request.Host}/api/Identity/Accounts/newpassword";
 
-            return Ok(new { msg = "Send OTP to your Email successfully, Please check Your Email" });
+            return Ok(new { 
+                msg = "Send OTP to your Email successfully, Please check Your Email and go here to reset your pass",
+                link = link
+            });
         }
 
         [HttpPost("newpassword")]
         public async Task<IActionResult> NewPassword(NewPasswordRequest request)
         {
-            var user = await _userManager.FindByIdAsync(request.ApplicationUserId);
+            var user = await _userManager.FindByEmailAsync(request.ApplicationUserEmail);
 
             if (user is null)
                 return NotFound();
 
-            var lstOTP = (await _userOTP.GetAsync(e => e.ApplicationUserId == request.ApplicationUserId)).OrderBy(e => e.Id).LastOrDefault();
+            var lstOTP = (await _userOTP.GetAsync(e => e.ApplicationUserId == user.Id)).OrderBy(e => e.Id).LastOrDefault();
             if (lstOTP is null)
                 return NotFound();
 
@@ -256,11 +263,18 @@ namespace etickets_aspnet_api.Areas.Identity.Controllers
                     msg = "Invalid OTP"
                 });
             }
-            if (lstOTP.ValidTo > DateTime.UtcNow)
+            if (lstOTP.ValidTo <= DateTime.UtcNow)
             {
                 return BadRequest(new
                 {
                     msg = "Expired OTP"
+                });
+            }
+            if (lstOTP.IsUsed)
+            {
+                return BadRequest(new
+                {
+                    msg = "this OTP is already used",
                 });
             }
             else
@@ -272,7 +286,9 @@ namespace etickets_aspnet_api.Areas.Identity.Controllers
                 {
                     return BadRequest(result.Errors);
                 }
-                return RedirectToAction("Login", "Account", new { area = "Identity", userId = user.Id });
+                return Ok(new { msg = "Password reset successfully" });
+
+                //return RedirectToAction("Login", "Accounts", new { area = "Identity", userId = user.Id });
             }
 
         }

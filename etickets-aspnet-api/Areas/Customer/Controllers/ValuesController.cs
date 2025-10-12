@@ -9,7 +9,6 @@ namespace etickets_aspnet_api.Areas.Customer.Controllers
     [Area(SD.CustomerRole)]
     [Route("api/customer/[controller]")]
     [ApiController]
-    [Authorize]
     public class ValuesController : ControllerBase
     {
         #region Fields

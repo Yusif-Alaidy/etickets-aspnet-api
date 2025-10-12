@@ -1,6 +1,6 @@
-﻿namespace etickets_aspnet_api.Models
+﻿namespace etickets_aspnet_api.Areas.Admin.DTOs.Request
 {
-    public partial class Movie
+    public class MovieRequest
     {
         public int Id { get; set; }
 
@@ -24,16 +24,13 @@
         public DateTime EndDate { get; set; }
 
         public int MovieStatus { get; set; }
-        //[Required]
+        [Required]
         public int CinemaId { get; set; }
-        //[Required]
-        public Cinema? Cinema { get; set; }
-        //[Required]
+        [Required]
         public int CategoryId { get; set; }
-        //[Required]
-        public Category? Category { get; set; }
         //public List<int> ActorIds { get; set; } = new List<int>();
-        public List<Actor>? Actors { get; set; } = new List<Actor>();
+        [Required]
+        public List<int>? ActorsIds { get; set; } = new List<int>();
 
         // ✅ Custom validation for start date < end date
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)

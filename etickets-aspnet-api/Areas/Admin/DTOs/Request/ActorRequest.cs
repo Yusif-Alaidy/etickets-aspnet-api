@@ -20,6 +20,5 @@ namespace etickets_aspnet_api.Areas.Admin.DTOs.Request
         public string? ProfilePicture { get; set; }
 
         public string? News { get; set; }
-        public List<MoviesResponse>? Movies { get; set; }
     }
 }

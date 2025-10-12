@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("etickets-aspnet-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9f58128b404219fa25a4a2f69dde1c351d2f8d6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+921d3180a31b485d783008e1d10da8485ab00078")]
 [assembly: System.Reflection.AssemblyProductAttribute("etickets-aspnet-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("etickets-aspnet-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

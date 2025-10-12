@@ -27,7 +27,6 @@
 	<ItemGroup>
 		<Folder Include="wwwroot\assets\admin\demo\" />
 		<Folder Include="wwwroot\assets\admin\img\" />
-		<Content Include="wwwroot\**" CopyToOutputDirectory="PreserveNewest" />
 		<Compile Remove="Areas\Admin - Copy %282%29\**" />
 		<Compile Remove="Areas\Admin - Copy\**" />
 		<Content Remove="Areas\Admin - Copy %282%29\**" />
