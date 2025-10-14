@@ -580,7 +580,6 @@ C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Deb
 C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Debug\net9.0\etickets.46A20489.Up2Date
 C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Debug\net9.0\etickets-aspnet-api.dll
 C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Debug\net9.0\refint\etickets-aspnet-api.dll
@@ -588,3 +587,9 @@ C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Deb
 C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Debug\net9.0\etickets-aspnet-api.genruntimeconfig.cache
 C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\obj\Debug\net9.0\ref\etickets-aspnet-api.dll
 C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\bin\Debug\net9.0\out\web.config
+C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\bin\Debug\net9.0\out\appsettings.Development.json
+C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\bin\Debug\net9.0\out\appsettings.json
+C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\bin\Debug\net9.0\out\etickets-aspnet-api.deps.json
+C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\bin\Debug\net9.0\out\etickets-aspnet-api.runtimeconfig.json
+C:\Users\yusif_j0ovw0c\Downloads\etickets-aspnet-api\etickets-aspnet-api\bin\Debug\net9.0\out\etickets-aspnet-api.staticwebassets.endpoints.json

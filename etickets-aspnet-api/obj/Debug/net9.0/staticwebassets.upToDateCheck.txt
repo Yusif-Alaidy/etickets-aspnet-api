@@ -1,6 +1,0 @@
-C:\Users\yusif_j0ovw0c\.nuget\packages\ntoastnotify\8.0.0\contentFiles\any\net6.0\wwwroot\noty.js
-C:\Users\yusif_j0ovw0c\.nuget\packages\ntoastnotify\8.0.0\contentFiles\any\net6.0\wwwroot\toastr.js
-wwwroot\img\83c6dc07-cc69-49e6-adcf-fbb9acc38be1.jpeg
-wwwroot\img\021e603f-06e0-441b-bfca-9433a7263a70.jpeg
-wwwroot\img\7e9c965d-1996-47d1-baa8-35ba6174f6c4.jpeg
-wwwroot\img\2a267931-07e8-4031-a55e-08e59ab4604c.jpeg
